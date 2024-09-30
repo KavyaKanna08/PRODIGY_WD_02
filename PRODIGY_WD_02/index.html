@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stopwatch Timer</title>
+    <link rel="stylesheet" href="styles.css"> 
+</head>
+<body>
+    <div class="container">
+        <h1>Stopwatch</h1>
+        <div class="time-input">
+            <input type="number" id="hours" placeholder="Hours">
+            <input type="number" id="minutes" placeholder="Minutes">
+            <input type="number" id="seconds" placeholder="Seconds">
+        </div>
+        <div id="timer">00:00:00</div>
+        <button id="startButton" onclick="startTimer()">Start</button>
+        <button id="pauseButton" onclick="pauseTimer()" disabled>Pause</button>
+        <button id="stopButton" onclick="stopTimer()" disabled>Stop</button>
+        <button id="resetButton" onclick="resetTimer()">Reset</button>
+    </div>
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2>Time's Up!</h2>
+            <p>The timer has completed.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
